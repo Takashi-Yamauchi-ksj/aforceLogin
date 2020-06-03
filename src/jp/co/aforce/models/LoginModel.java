@@ -4,7 +4,7 @@ import java.sql.ResultSet;
 
 import jp.co.aforce.util.DBUtil;
 
-public class Login_model {
+public class LoginModel {
 
 
 	/**

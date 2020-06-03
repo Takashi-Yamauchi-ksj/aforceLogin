@@ -1,11 +1,11 @@
 package jp.co.aforce.beans;
 
-public class Login_bean {
+public class LoginBean {
 
 	private String username;
 	private String password;
 	private String emsg;
-	public Login_bean(){};
+	public LoginBean(){};
 
 	public String getUsername() {
 		return username;

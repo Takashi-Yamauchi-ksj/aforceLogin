@@ -8,12 +8,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import jp.co.aforce.beans.Login_bean;
-import jp.co.aforce.models.Login_model;
+import jp.co.aforce.beans.LoginBean;
+import jp.co.aforce.models.LoginModel;
 
 @SuppressWarnings("serial")
 //HttpServlet継承してLogin_servletを定義
-public class Login_servlet extends HttpServlet{
+public class LoginServlet extends HttpServlet{
 
 	//doGet、doPostをOverrideして再定義
 	//
@@ -36,12 +36,12 @@ public class Login_servlet extends HttpServlet{
 			String password = request.getParameter("password");
 
             //Login_beanに格納
-			Login_bean loginBean = new Login_bean();
+			LoginBean loginBean = new LoginBean();
 			loginBean.setUsername(username);
 			loginBean.setPassword(password);
 
 
-			Login_model loginModel = new Login_model();
+			LoginModel loginModel = new LoginModel();
 			String forward_jsp = "/views/login.jsp";
 
 
